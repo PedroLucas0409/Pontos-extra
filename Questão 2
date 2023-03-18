@@ -1,0 +1,21 @@
+public class Cliente extends Pessoa{
+	private int clienteid;
+	
+	public Cliente(String nome, String cpf, String datanascimento, int clienteid){
+		super(nome,cpf,datanascimento);
+		this.clienteid = clienteid;
+	}
+	
+	public int getId() {
+		return clienteid;
+	}
+	
+	public void setId(int clienteid) {
+		this.clienteid = clienteid;
+	}
+	
+	public String toString(){
+		return "" + clienteid;
+	}
+	
+}
